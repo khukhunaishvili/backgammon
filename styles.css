@@ -1,0 +1,170 @@
+body {
+  background-color: rgb(0, 29, 39);
+  margin-left: 30px;
+  margin-right: 30px;
+}
+div {
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a img {
+  width:42px;
+  height:42px;
+}
+
+h1 {
+  color: #f7f7f7;
+}
+#name-1-set-game, #name-2-set-game {
+    display: flex;
+    flex-direction: row;
+}
+#color {
+    color: brown;
+}
+#hostage-win-zone {
+  display: flex;
+  flex-direction: column;
+}
+.hostage-zone {
+  display: flex;
+  border: 2px solid rgb(202, 0, 0);
+  width: fit-content;
+  height: 36px;
+}
+.win-zone-1 {
+  display: flex;
+  border: 2px solid rgb(3, 177, 61);
+  width: fit-content;
+  height: 36px;
+}
+.win-zone-2 {
+  display: flex;
+  border: 2px solid rgb(3, 177, 61);
+  width: fit-content;
+  height: 36px;
+}
+.button {
+  background-color: darkcyan;
+  color: cornsilk;
+}
+.nardi-desk {
+  height: 400px;
+  width: 70%;
+}
+.half1 {
+  height: 48%;
+  width: 95%;
+  display: inline-flex; 
+  flex-direction: row; 
+  justify-content: left;
+}
+.half2 {
+  height: 48%;
+  width: 95%;
+  display: inline-flex; 
+  flex-direction: row; 
+  justify-content: left; 
+}
+.table-up {
+  border: 2px solid #0095ff;
+  border-bottom-color: rgb(0, 29, 39);
+  height: 100%;
+  width: 48%;
+  display: inline-flex; 
+  flex-direction: row; 
+  justify-content: left; 
+  place-items: flex-start;
+  margin-right: 1%;
+}
+.table-down {
+  border: 2px solid  #0095ff;
+  border-top-color: rgb(0, 29, 39);
+  height: 100%;
+  width: 48%;
+  display: inline-flex; 
+  flex-direction: row; 
+  justify-content: left; 
+  place-items: flex-end;
+  margin-right: 1%;
+}
+.triangle-up {
+  line-height: 10%;
+  border: 2px solid rgb(12, 145, 223);
+  height: 63%;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 1%;
+  width: 10%;
+}
+.triangle-down {
+  line-height: 10%;
+  border: 2px solid rgb(12, 145, 223);
+  height: 63%;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 1%;
+  width: 10%;
+}
+/* checkers */
+.checkbox-label {
+  display: flex;
+  position: relative;
+  padding-left: 5px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;  
+}
+/* Hide the browser's default checkbox */
+.checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Create a custom checkbox */
+.checkmark1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 12px;
+  width: 12px;
+  background-color: #fd3908;
+}
+.checkmark2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 12px;
+  width: 12px;
+  background-color: #ffd31d;
+}
+/* On mouse-over, add a grey background color */
+.checkbox-label:hover input ~ .checkmark1 {
+  background-color: rgb(255, 177, 177);
+}
+.checkbox-label:hover input ~ .checkmark2 {
+  background-color: #f5fcc1;
+}
+/* When the checkbox is checked, add a blue background */
+.checkbox-label input:checked ~ .checkmark1 {
+  background-color: rgb(255, 171, 157);
+}
+.checkbox-label input:checked ~ .checkmark2 {
+  background-color: rgb(224, 226, 255);
+}
